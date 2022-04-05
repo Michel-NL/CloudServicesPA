@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webpage-{yourname}
+  namespace: {yourname}-demo-namespace
+spec:
+  containers:
+  - name: 
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
