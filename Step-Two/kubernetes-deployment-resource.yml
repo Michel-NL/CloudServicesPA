@@ -19,9 +19,12 @@ spec:
         app: {yourname}
     spec:
       containers:
-        image: k8s.gcr.io/echoserver:1.4
+      - name: server
+        image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
         imagePullPolicy: Always
-        name: server
+        env:
+        - name: TITLE
+          value: "Welcome to Rick's Azure Kubernetes Service (AKS) exposed to the public internet"
         ports:
         - containerPort: 80
           name: http
