@@ -12,6 +12,11 @@ Then login:
 
 Follow the instructions in the new browser window.
 
+Then retrieve cluster credentials:
+
+    az aks get-credentials --resource-group $(resource group) --name $(Kubernetes name)
+
+You are now able to perform commands against the Kubernetes API.
 
 ## Documentation
 
