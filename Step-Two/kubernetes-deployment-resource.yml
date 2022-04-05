@@ -24,7 +24,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: TITLE
-          value: "Welcome to Rick's Azure Kubernetes Service (AKS) exposed to the public internet"
+          value: "Welcome to {yourname} Azure Kubernetes Service (AKS) exposed to the public internet"
         ports:
         - containerPort: 80
           name: http
